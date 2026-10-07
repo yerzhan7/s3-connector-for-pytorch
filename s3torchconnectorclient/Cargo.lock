@@ -698,9 +698,9 @@ dependencies = [
 
 [[package]]
 name = "mountpoint-s3-crt"
-version = "0.16.1"
+version = "0.16.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d930002b5ddbde1eb4e75a4dba333f9bc88620c0f6ad3a3d1c4f55d8a5773d7e"
+checksum = "46a29f3a5076a26c1e64c26a390eedade85e1ad27909328b2fdb67ec610f83fd"
 dependencies = [
  "futures",
  "libc",
