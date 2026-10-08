@@ -12,6 +12,7 @@
 * Consume mountpoint-s3-client changes that serve GET data from the CRT memory pool instead of copying it. This bounds memory use, but unread data counts against the pool, so a partially-read stream that is kept open can stall other requests on the same client until it is read or closed (awslabs/mountpoint-s3#1481)
 
 ### Breaking changes
+* Reading from a closed `SequentialS3Reader` now raises `ValueError`, as with other file objects, instead of reading on from the old stream
 
 ## v1.5.0 (February 20, 2026)
 
